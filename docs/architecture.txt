@@ -14,3 +14,37 @@ azure-clockster-pipeline/
 ├── clockster.pbix           # Power BI report file (optional, for demo)
 └── ci-cd/                   # optional folder for GitHub Actions/Azure DevOps YAML
 └── main.py                  # orchestrates ETL + analysis
+
+
+DataAnalyticsTemplate/
+│
+├── storage/
+│   ├── raw/          # unprocessed data dumps
+│   ├── clean/        # cleaned datasets
+│   └── curated/      # final, business-ready datasets
+│
+├── etl_python/
+│   ├── extract.py
+│   ├── transform.py
+│   ├── load.py
+│   ├── ingest.py
+│   └── clean.py
+│
+├── etl_sql/
+│   ├── create_tables.sql
+│   ├── views.sql
+│   ├── metrics.sql
+│   └── schema.sql
+│
+├── notebooks/
+│   └── exploration.ipynb   # Jupyter/Databricks-style notebooks
+│
+├── docs/
+│   ├── dictionary.md       # data dictionary
+│   └── architecture.md     # pipeline architecture notes
+│
+├── powerbi/
+│   └── dashboard.pbix      # Power BI report file
+│
+├── main.py                 # orchestrator script
+└── README.md               # project overview
