@@ -1,13 +1,16 @@
 # Azure Clockster Pipeline
 
 ## 📖 Overview
+
 This project demonstrates an end-to-end data analytics pipeline using Microsoft Azure services, with a local equivalent built in VS Code, PostgreSQL, and Power BI.  
 It showcases my ability to design, automate, and visualize data workflows both in the cloud and locally.
 
 ---
 
 ## 🏗️ Architecture
+
 **Azure Workflow:**
+
 - Storage Account (ADLS Gen2) → Raw, Clean, Curated containers
 - Data Factory → ingestion pipelines (CSV, APIs, databases, services)
 - Databricks → transformation notebooks (PySpark/Python)
@@ -15,6 +18,7 @@ It showcases my ability to design, automate, and visualize data workflows both i
 - Power BI → dashboards connected to Synapse
 
 **Local Workflow:**
+
 - Local folders → `/raw`, `/clean`, `/curated`
 - Python scripts → ingestion (CSV, APIs, DBs) + transformation (Pandas/Polars)
 - PostgreSQL → data warehouse tables
@@ -24,6 +28,7 @@ It showcases my ability to design, automate, and visualize data workflows both i
 ---
 
 ## ⚙️ Azure Workflow Steps
+
 1. **Storage Account**
    - Containers: raw, clean, curated
    - Raw data uploaded to `raw`
@@ -51,6 +56,7 @@ It showcases my ability to design, automate, and visualize data workflows both i
 ---
 
 ## 💻 Local Workflow Steps
+
 1. **Storage Layer**
    - Folders: `/raw`, `/clean`, `/curated`
 
@@ -87,6 +93,7 @@ It showcases my ability to design, automate, and visualize data workflows both i
 ---
 
 ## 📂 Repository Contents
+
 - `raw_data/` → sample CSVs
 - `scripts/` → Python ingestion/transformation scripts
 - `docs/` → architecture diagram, walkthrough notes, screenshots
@@ -99,6 +106,7 @@ It showcases my ability to design, automate, and visualize data workflows both i
 ---
 
 ## 🎯 Key Skills Demonstrated
+
 - Azure Storage, Data Factory, Databricks, Synapse Analytics
 - Local equivalents with VS Code, Python, PostgreSQL
 - Automation with ADF triggers and Task Scheduler
@@ -109,4 +117,5 @@ It showcases my ability to design, automate, and visualize data workflows both i
 ---
 
 ## 📹 Walkthrough Video
+
 A full narrated video walkthrough is available, showcasing both the Azure pipeline and the local equivalent.
